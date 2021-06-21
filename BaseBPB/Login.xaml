@@ -1,0 +1,25 @@
+﻿<Window x:Class="BaseBPB.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaseBPB"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" WindowStyle="None">
+    <Grid>
+        <Rectangle Fill="#FFA7EBD6" HorizontalAlignment="Right" Height="346" Margin="0,104,0,-0.4" Stroke="#FFFCFCFC" VerticalAlignment="Center" Width="800" />
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" Width="271" Background="#FF27A382" Margin="529,0,0,0.6">
+            <Image Source="IMAGENES/LOGO 3.png" Stretch="Uniform" Height="217" Margin="0,10,0.2,0" VerticalAlignment="Top" DockPanel.Dock="Top"/>
+
+        </DockPanel>
+        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Right"  VerticalAlignment="Top" Width="173" Margin="0,283,45,0" Height="44" Background="White" FontSize="20" Click="btnEntrar_Click"  />
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Right"  VerticalAlignment="Top" Width="173" Margin="0,344,45,0" Height="44" Background="White" FontSize="20" Click="btnCancelar_Click"  />
+        <Label Content="Inicio de sesión" HorizontalAlignment="Left" VerticalAlignment="Top" Height="67" Width="303" FontSize="40" Margin="106,20,0,0"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="53,186,0,0" VerticalAlignment="Top" Height="29" Width="84" FontSize="18"/>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="34" Margin="53,222,0,0" TextWrapping="Wrap" Text="Ingresa tu usuario" VerticalAlignment="Top" Width="401" TextChanged="TextBox_TextChanged" FontSize="18"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="53,283,0,0" VerticalAlignment="Top" Height="29" Width="103" FontSize="18"/>
+        <TextBox x:Name="txtContraseña" HorizontalAlignment="Left" Height="34" Margin="53,319,0,0" TextWrapping="Wrap" Text="Ingresa tu contraseña" VerticalAlignment="Top" Width="401" TextChanged="TextBox_TextChanged" FontSize="18"/>
+        <Button Content="X" HorizontalAlignment="Center" Margin="771,0,0,420.6" VerticalAlignment="Bottom" Width="29" Click="Button_Click_1" Background="#FF27A382" BorderBrush="#FF1A8C6E" FontSize="18" Height="29"/>
+
+    </Grid>
+</Window>
